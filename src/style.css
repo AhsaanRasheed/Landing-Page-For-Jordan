@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Noto+Sans+SC&family=Poppins:wght@300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* app.css (or include this in your main CSS file) */
+
+/* Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e5e5e5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 6px;
+  border: 3px solid #e5e5e5;
+}
+
+/* Firefox */
+/* Note: Firefox supports scrollbar styling using a different approach */
+/* See: https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color */
+/* Make sure to include browser-specific prefixes for full support */
+
+/* For Edge, Internet Explorer, and other browsers, you may need to use non-standard styles */
+
+/* Apply Tailwind classes for global styling */
+html {
+  scrollbar-color: #999 #f5f5f5;
+  scrollbar-width: thin;
+}
